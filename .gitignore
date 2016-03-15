@@ -1,0 +1,11 @@
+# Logs
+*.log
+
+# IDE
+.idea/
+
+# Dependency directory
+node_modules
+
+# Generated files
+dist/
