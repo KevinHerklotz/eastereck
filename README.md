@@ -61,6 +61,9 @@ Screen will flicker like an old television
 #### iconparty
 All icons will rotate randomly.
 
+#### meancaptcha
+Displays a very mean Captcha.
+
 #### pornsound
 An embarrassing porn sound is played. 
 

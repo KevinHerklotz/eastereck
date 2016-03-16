@@ -1,0 +1,23 @@
+{
+  "name": "eastereck",
+  "version": "0.0.1",
+  "description": "funny easter egg library",
+  "main": "dist/eastereck.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinHerklotz/eastereck.git"
+  },
+  "keywords": [
+    "easter",
+    "egg"
+  ],
+  "author": "Kevin Herklotz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KevinHerklotz/eastereck/issues"
+  },
+  "homepage": "https://github.com/KevinHerklotz/eastereck#readme"
+}
