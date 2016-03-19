@@ -1,7 +1,12 @@
+var path = require('path');
+
+var dir_lib = path.resolve(__dirname, 'lib');
+var dir_dist = path.resolve(__dirname, 'dist');
+
 module.exports = {
-    entry:  './lib/main.js',
+    entry:  path.resolve(dir_lib, 'main.js'),
     output: {
-        path:     'dist',
-        filename: 'eastereck.js',
+        path:     dir_dist,
+        filename: 'eastereck.js'
     },
 };
