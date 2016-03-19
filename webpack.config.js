@@ -1,5 +1,7 @@
 var path = require('path');
 
+var production = process.env.NODE_ENV === 'production';
+
 var dir_lib = path.resolve(__dirname, 'lib');
 var dir_dist = path.resolve(__dirname, 'dist');
 
@@ -21,5 +23,7 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    debug: !production,
+    devtool: production ? false : 'source-map'
 };
