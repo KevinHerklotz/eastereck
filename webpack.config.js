@@ -9,4 +9,17 @@ module.exports = {
         path:     dir_dist,
         filename: 'eastereck.js'
     },
+    module: {
+        loaders: [
+            {
+                test:   /\.js/,
+                loader: 'babel-loader',
+                include: dir_lib,
+                query: {
+                    presets: ['es2015'],
+                    cacheDirectory: true
+                }
+            }
+        ]
+    }
 };
