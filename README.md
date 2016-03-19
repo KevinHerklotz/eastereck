@@ -13,7 +13,7 @@ The first thing I did was writing this documentation - so don't wonder the libra
 
 The aim is to install it via npm with `npm install --save eastereck` and then just require or import it.
 
-### Via scipt tag
+### Via script tag
 
 An other way should be including it via script tag in HTML:  
 
@@ -55,8 +55,11 @@ You think you broke your screen glass! Even with the sound of breaking glass.
 #### drunken
 Blurred screen like when you are drunken.
 
+#### neonflicker
+Alternating neon colors that will make your eyes bleed.
+
 #### flicker
-Screen will flicker like an old television
+Screen will flicker like an old television.
 
 #### iconparty
 All icons will rotate randomly.
