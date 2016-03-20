@@ -1,18 +1,19 @@
-var path = require('path');
+var webpack = require('webpack'),
+    path = require('path');
 
-var production = process.env.NODE_ENV === 'production';
-
-var libraryName = 'eastereck';
+var production = process.env.NODE_ENV === 'production',
+    libraryName = 'eastereck',
+    dir_lib = path.resolve(__dirname, 'lib'),
+    dir_dist = path.resolve(__dirname, 'dist'),
+    plugins = [],
+    outputFile;
 
 if (production) {
-    //plugins.push(new UglifyJsPlugin({ minimize: true }));
+    plugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }));
     outputFile = libraryName + '.min.js';
 } else {
     outputFile = libraryName + '.js';
 }
-
-var dir_lib = path.resolve(__dirname, 'lib');
-var dir_dist = path.resolve(__dirname, 'dist');
 
 module.exports = {
     entry:  path.resolve(dir_lib, 'main.js'),
@@ -42,6 +43,7 @@ module.exports = {
             }
         ]
     },
+    plugins: plugins,
     eslint: {
         failOnWarning: production,
         failOnError: production
