@@ -40,7 +40,7 @@
     //
     "comma-dangle": [2, "never"],
     "no-cond-assign": [2, "except-parens"],
-    "no-console": 0, // disabled for programming a Node CLI application
+    "no-console": 1,
     "no-constant-condition": 2,
     "no-control-regex": 2,
     "no-debugger": 2,
@@ -125,7 +125,7 @@
       "number": true,
       "string": true}],
     "no-implied-eval": 2,
-    "no-invalid-this": 0,
+    "no-invalid-this": 2,
     "no-iterator": 2,
     "no-labels": 2,
     "no-lone-blocks": 2,
@@ -145,7 +145,7 @@
     "no-octal-escape": 2,
     "no-octal": 2,
     "no-param-reassign": 1,
-    "no-process-env": 0, // disabled for programming a Node CLI application
+    "no-process-env": 2,
     "no-proto": 2,
     "no-redeclare": [2, {
       "builtinGlobals": true
@@ -194,7 +194,7 @@
       "hoist": "functions",
       "allow": []
     }],
-    "no-undef-init": 0,
+    "no-undef-init": 1,
     "no-undef": 2,
     "no-undefined": 2,
     "no-unused-vars": 2,
@@ -260,7 +260,7 @@
       "allowArrayStart": true
     }],
     "max-depth": [2, 10],
-    "max-len": [2, 140, 2, {
+    "max-len": [2, 120, 2, {
       "ignoreComments": true,
       "ignoreUrls": true,
       "ignorePattern": "(R|r)egexp(?:[A-Z]\\w* = )?" // disable for assignments of regular expressions
