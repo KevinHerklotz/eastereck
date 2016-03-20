@@ -306,8 +306,8 @@
     "require-jsdoc": [2, {
       "require": {
         "FunctionDeclaration": true,
-        "MethodDefinition": false,
-        "ClassDeclaration": false
+        "MethodDefinition": true,
+        "ClassDeclaration": true
       }
     }],
     "semi-spacing": [2, {
