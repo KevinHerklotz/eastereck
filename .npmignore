@@ -1,2 +1,4 @@
 # unminified binaries
 lib/
+dist/eastereck.js
+dist/eastereck.js.map

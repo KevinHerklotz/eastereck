@@ -4,7 +4,12 @@ var production = process.env.NODE_ENV === 'production';
 
 var libraryName = 'eastereck';
 
-var outputFile = libraryName + '.js';
+if (production) {
+    //plugins.push(new UglifyJsPlugin({ minimize: true }));
+    outputFile = libraryName + '.min.js';
+} else {
+    outputFile = libraryName + '.js';
+}
 
 var dir_lib = path.resolve(__dirname, 'lib');
 var dir_dist = path.resolve(__dirname, 'dist');
