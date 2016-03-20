@@ -12,10 +12,17 @@ module.exports = {
         filename: 'eastereck.js'
     },
     module: {
+        preLoaders: [
+            {
+                test: /\.js$/,
+                loader: 'eslint',
+                include: dir_lib
+            }
+        ],
         loaders: [
             {
                 test:   /\.js/,
-                loader: 'babel-loader',
+                loader: 'babel',
                 include: dir_lib,
                 query: {
                     presets: ['es2015'],
@@ -23,6 +30,10 @@ module.exports = {
                 }
             }
         ]
+    },
+    eslint: {
+        failOnWarning: production,
+        failOnError: production
     },
     debug: !production,
     devtool: production ? false : 'source-map'
