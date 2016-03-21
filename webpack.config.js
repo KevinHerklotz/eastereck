@@ -2,7 +2,8 @@ var webpack = require('webpack'),
     path = require('path'),
     autoprefixer = require('autoprefixer'),
     cssnano = require('cssnano'),
-    HtmlWebpackPlugin = require('html-webpack-plugin');
+    HtmlWebpackPlugin = require('html-webpack-plugin'),
+    failPlugin = require('webpack-fail-plugin');
 
 var production = process.env.NODE_ENV === 'production',
     libraryName = 'eastereck',
@@ -11,8 +12,17 @@ var production = process.env.NODE_ENV === 'production',
     dir_style = path.resolve(dir_src, 'style'),
     dir_assets = path.resolve(dir_src, 'assets'),
     dir_dist = path.resolve(__dirname, 'dist'),
-    plugins = [],
     outputFile;
+
+var plugins = [
+    new HtmlWebpackPlugin({
+        title: 'Eastereck demo page',
+        filename: 'demo.html',
+        inject: 'body',
+        template: 'src/demo/index.html.twig'
+    }),
+    failPlugin
+];
 
 if (production) {
     plugins.push(new webpack.optimize.UglifyJsPlugin({
@@ -26,13 +36,6 @@ if (production) {
 } else {
     outputFile = libraryName + '.js';
 }
-
-plugins.push(new HtmlWebpackPlugin({
-    title: 'Eastereck demo page',
-    filename: 'demo.html',
-    inject: 'body',
-    template: 'src/demo/index.html.twig'
-}));
 
 module.exports = {
     entry:  path.resolve(dir_js, 'main.js'),
