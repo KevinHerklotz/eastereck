@@ -7,8 +7,8 @@
 # Dependency directory
 node_modules
 
-# Generated files
-dist/
-# At the moment generated file is not ignored, because it is used by demo.
-# There should be a better solution in the future
-!dist/eastereck.min.js
+# This file is only for development, because it contains not minified JS and references to SourceMap
+dist/eastereck.js
+
+# SourceMap files
+*.map

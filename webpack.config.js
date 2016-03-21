@@ -1,7 +1,8 @@
 var webpack = require('webpack'),
     path = require('path'),
     autoprefixer = require('autoprefixer'),
-    cssnano = require('cssnano');
+    cssnano = require('cssnano'),
+    HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var production = process.env.NODE_ENV === 'production',
     libraryName = 'eastereck',
@@ -26,6 +27,13 @@ if (production) {
     outputFile = libraryName + '.js';
 }
 
+plugins.push(new HtmlWebpackPlugin({
+    title: 'Eastereck demo page',
+    filename: 'demo.html',
+    inject: 'body',
+    template: 'src/demo/index.html.twig'
+}));
+
 module.exports = {
     entry:  path.resolve(dir_js, 'main.js'),
     output: {
@@ -45,7 +53,7 @@ module.exports = {
         ],
         loaders: [
             {
-                test:   /\.js/,
+                test:   /\.js$/,
                 loader: 'babel',
                 include: dir_js,
                 query: {
@@ -61,6 +69,10 @@ module.exports = {
                 test: /\.scss$/,
                 include: dir_style,
                 loaders: ['style', 'css', 'postcss', 'sass']
+            },
+            {
+                test: /\.twig$/,
+                loader: "twig"
             }
         ]
     },
