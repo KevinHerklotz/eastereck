@@ -5,9 +5,10 @@ var webpack = require('webpack'),
 
 var production = process.env.NODE_ENV === 'production',
     libraryName = 'eastereck',
-    dir_lib = path.resolve(__dirname, 'lib'),
-    dir_style = path.resolve(__dirname, 'style'),
-    dir_assets = path.resolve(__dirname, 'assets'),
+    dir_src = path.resolve(__dirname, 'src'),
+    dir_js = path.resolve(dir_src, 'js'),
+    dir_style = path.resolve(dir_src, 'style'),
+    dir_assets = path.resolve(dir_src, 'assets'),
     dir_dist = path.resolve(__dirname, 'dist'),
     plugins = [],
     outputFile;
@@ -26,7 +27,7 @@ if (production) {
 }
 
 module.exports = {
-    entry:  path.resolve(dir_lib, 'main.js'),
+    entry:  path.resolve(dir_js, 'main.js'),
     output: {
         path: dir_dist,
         filename: outputFile,
@@ -39,14 +40,14 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'eslint',
-                include: dir_lib
+                include: dir_js
             }
         ],
         loaders: [
             {
                 test:   /\.js/,
                 loader: 'babel',
-                include: dir_lib,
+                include: dir_js,
                 query: {
                     cacheDirectory: true
                 }
