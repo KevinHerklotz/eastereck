@@ -15,19 +15,17 @@ The aim is to install it via npm with `npm install --save eastereck` and then ju
 
 ### Via script tag
 
-An other way should be including it via script tag in HTML:  
+An other way is to include it via script tag in HTML:  
 
 ```html
-<script src="https://github.com/KevinHerklotz/eastereck/dist/eastereck.js"></script>
+<script src="https://github.com/KevinHerklotz/eastereck/dist/eastereck.min.js"></script>
 ```
 
-This should add the eastereck object to the global scope, so you can start an easter egg with `eastereck.functionname.start()`.
+This adds the eastereck object to the global scope, so you can start an easter egg with `eastereck.functionname.start()`.
 
 ## Usage
 
 ```javascript
-import 'eastereck'
-
 // To start it
 eastereck.functionname.start(duration, callback);
 
@@ -43,7 +41,8 @@ The function start accepts two parameters. Both are optional:
 
 ### Already implemented
 
-___none___
+#### unicorncursor
+Cursor turns into unicorn.
 
 ### Ideas / not yet implemented
 
@@ -75,9 +74,6 @@ Scrolling up will scroll down the page and vice versa.
 
 #### unicorninvasion
 Unicorns appear all over the screen and a fancy unicorn song is played. 
-
-#### unicorncursor
-Cursor turns into unicorn.
 
 #### upsidedown
 Screen will rotate 180 degree. Most funny on mobile devices, when the user tries to rotate the device to solve the problem.
