@@ -1,6 +1,7 @@
 var webpack = require('webpack'),
     path = require('path'),
-    autoprefixer = require('autoprefixer');
+    autoprefixer = require('autoprefixer'),
+    cssnano = require('cssnano');
 
 var production = process.env.NODE_ENV === 'production',
     libraryName = 'eastereck',
@@ -64,7 +65,7 @@ module.exports = {
     },
     plugins: plugins,
     postcss: function () {
-        return [autoprefixer({ browsers: ['last 2 versions'] })];
+        return [autoprefixer({ browsers: ['last 2 versions'] }), cssnano];
     },
     eslint: {
         failOnWarning: production,

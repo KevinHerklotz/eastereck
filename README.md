@@ -54,6 +54,8 @@ You think you broke your screen glass! Even with the sound of breaking glass.
 #### drunken
 Blurred screen like when you are drunken.
 
+Does not work in IE (see [caniuse.com](http://caniuse.com/#feat=css-filters)).
+
 #### neonflicker
 Alternating neon colors that will make your eyes bleed.
 
