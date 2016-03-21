@@ -85,4 +85,4 @@ Screen will rotate 180 degree. Most funny on mobile devices, when the user tries
 
 ## Demo
 
-Click [here](https://rawgit.com/KevinHerklotz/eastereck/master/demo/index.html) to see a demo page.
+Click [here](https://rawgit.com/KevinHerklotz/eastereck/master/dist/demo.html) to see a demo page.
