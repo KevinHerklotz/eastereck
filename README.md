@@ -41,6 +41,11 @@ The function start accepts two parameters. Both are optional:
 
 ### Already implemented
 
+#### drunken
+Blurred screen like when you are drunken.
+
+Does not work in IE (see [caniuse.com](http://caniuse.com/#feat=css-filters)).
+
 #### unicorncursor
 Cursor turns into unicorn.
 
@@ -50,11 +55,6 @@ Cursor turns into unicorn.
 
 #### brokenglass
 You think you broke your screen glass! Even with the sound of breaking glass.
-
-#### drunken
-Blurred screen like when you are drunken.
-
-Does not work in IE (see [caniuse.com](http://caniuse.com/#feat=css-filters)).
 
 #### neonflicker
 Alternating neon colors that will make your eyes bleed.
@@ -67,6 +67,9 @@ All icons will rotate randomly.
 
 #### meancaptcha
 Displays a very mean Captcha.
+
+#### movingscreen
+Screen is moving around.
 
 #### pornsound
 An embarrassing porn sound is played. 

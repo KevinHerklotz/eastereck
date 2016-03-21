@@ -4,23 +4,23 @@
     <meta charset="utf-8">
     <title>Eastereck demo</title>
 
-    <!-- Include bootstrap CSS -->
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    <!-- Include Bootstrap 4 CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
           crossorigin="anonymous">
 </head>
 <body>
 
-<div class="container text-center">
-    <h1>Eastereck demo page</h1>
+<div class="container text-xs-center">
+    <h1 class="m-y-2">Eastereck demo page</h1>
     <div class="row">
-        <div class="col-xs-6 col-md-4 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-y-1">
             <h2>unicorncursor</h2>
             <button class="btn btn-success" onclick="eastereck.unicorncursor.start()">start</button>
             <button class="btn btn-danger" onclick="eastereck.unicorncursor.stop()">stop</button>
         </div>
-        <div class="col-xs-6 col-md-4 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-y-1">
             <h2>drunken</h2>
             <button class="btn btn-success" onclick="eastereck.drunken.start()">start</button>
             <button class="btn btn-danger" onclick="eastereck.drunken.stop()">stop</button>
