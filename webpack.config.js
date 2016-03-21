@@ -1,5 +1,6 @@
 var webpack = require('webpack'),
-    path = require('path');
+    path = require('path'),
+    autoprefixer = require('autoprefixer');
 
 var production = process.env.NODE_ENV === 'production',
     libraryName = 'eastereck',
@@ -57,11 +58,14 @@ module.exports = {
             {
                 test: /\.scss$/,
                 include: dir_style,
-                loaders: ['style', 'css', 'sass']
+                loaders: ['style', 'css', 'postcss', 'sass']
             }
         ]
     },
     plugins: plugins,
+    postcss: function () {
+        return [autoprefixer({ browsers: ['last 2 versions'] })];
+    },
     eslint: {
         failOnWarning: production,
         failOnError: production
