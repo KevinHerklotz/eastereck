@@ -1,0 +1,9 @@
+<div class="row">
+    {% for eastereggname in eastereggnames %}
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-y-1">
+            <h2>{{ eastereggname }}</h2>
+            <button class="btn btn-success" onclick="eastereck.{{ eastereggname }}.start()">start</button>
+            <button class="btn btn-danger" onclick="eastereck.{{ eastereggname }}.stop()">stop</button>
+        </div>
+    {% endfor %}
+</div>
