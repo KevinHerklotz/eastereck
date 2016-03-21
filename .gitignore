@@ -9,5 +9,6 @@ node_modules
 
 # Generated files
 dist/
-# At the moment generated file is not ignored, because it is used by demo. There should be a better solution in the future
+# At the moment generated file is not ignored, because it is used by demo.
+# There should be a better solution in the future
 !dist/eastereck.min.js
