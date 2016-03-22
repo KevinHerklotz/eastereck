@@ -1,5 +1,3 @@
-// einen Abstract Class setter
-// filter: blur(5px);
 import AbstractClassSetter from './AbstractClassSetter';
 
 /**
