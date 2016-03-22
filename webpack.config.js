@@ -16,7 +16,6 @@ var production = process.env.NODE_ENV === 'production',
 
 var plugins = [
     new HtmlWebpackPlugin({
-        title: 'Eastereck demo page',
         filename: 'demo.html',
         inject: 'body',
         template: 'src/demo/index.html.twig'

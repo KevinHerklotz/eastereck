@@ -1,11 +1,6 @@
 # eastereck
 
-A library that provides funny easter eggs for your page.
-
-
-## In development
-
-The first thing I did was writing this documentation - so don't wonder the library doesn't work yet.
+A library that provides funny easter eggs for your page. Notice that it is still in development.
 
 ## Include it into your project
 
