@@ -1,8 +1,7 @@
-import Drunken from './eastereggs/Drunken';
-import Unicorncursor from './eastereggs/UnicornCursor';
+import ClassSetter from './eastereggs/ClassSetter';
 require('../style/eastereck.scss');
 
 export default {
-    drunken: new Drunken(),
-    unicorncursor: new Unicorncursor()
+    drunken: new ClassSetter('eastereck-drunken'),
+    unicorncursor: new ClassSetter('eastereck-unicorncursor')
 };

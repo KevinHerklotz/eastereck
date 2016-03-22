@@ -1,16 +1,26 @@
 import AbstractEasterEgg from './AbstractEasterEgg';
 
 /**
- * Abstract easter egg class setter
+ * Easter egg class setter
  *
  * For easter eggs that get it's styles from html/css classes only
  */
-export default class AbstractClassSetter extends AbstractEasterEgg {
+export default class ClassSetter extends AbstractEasterEgg {
     /**
-     * Construct AbstractClassSetter
+     * Construct ClassSetter
+     *
+     * @param {string} className HTML/CSS class name that is responsible for style
      */
-    constructor() {
+    constructor(className) {
         super();
+
+        /**
+         * HTML/CSS class name that is responsible for style
+         *
+         * @protected
+         * @type {string}
+         */
+        this.className = className;
     }
 
     /**
@@ -18,7 +28,7 @@ export default class AbstractClassSetter extends AbstractEasterEgg {
      *
      * @override
      * @protected
-     * @return {UnicornCursor} Self reference
+     * @return {ClassSetter} Self reference
      */
     activate() {
         document.body.classList.add(this.className);
@@ -31,7 +41,7 @@ export default class AbstractClassSetter extends AbstractEasterEgg {
      *
      * @override
      * @protected
-     * @return {UnicornCursor} Self reference
+     * @return {ClassSetter} Self reference
      */
     reset() {
         document.body.classList.remove(this.className);

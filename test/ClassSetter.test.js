@@ -1,17 +1,10 @@
 var test = require('tape');
-import AbstractClassSetter from '../src/js/eastereggs/AbstractClassSetter';
-
-class ClassSetter extends AbstractClassSetter {
-    constructor() {
-        super();
-        this.className = 'test-classname';
-    }
-}
+import ClassSetter from '../src/js/eastereggs/ClassSetter';
 
 const hasClass = (element, cls) => ((' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1);
 
-test('AbstractClassSetter', function(assert) {
-    var classSetter = new ClassSetter();
+test('ClassSetter', function(assert) {
+    var classSetter = new ClassSetter('test-classname');
     var body = document.body;
 
     // set default class to body
