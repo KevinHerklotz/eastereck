@@ -3,5 +3,6 @@ require('../style/eastereck.scss');
 
 export default {
     drunken: new ClassSetter('eastereck-drunken'),
-    unicorncursor: new ClassSetter('eastereck-unicorncursor')
+    unicorncursor: new ClassSetter('eastereck-unicorncursor'),
+    upsidedown: new ClassSetter('eastereck-upsidedown')
 };

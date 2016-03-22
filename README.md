@@ -16,7 +16,7 @@ An other way is to include it via script tag in HTML:
 <script src="https://github.com/KevinHerklotz/eastereck/dist/eastereck.min.js"></script>
 ```
 
-This adds the eastereck object to the global scope, so you can start an easter egg with `eastereck.functionname.start()`.
+This adds the eastereck object to the global scope, so you can start an easter egg with `eastereck.eastereggname.start()`.
 
 ## Usage
 
@@ -43,6 +43,10 @@ Does not work in IE (see [caniuse.com](http://caniuse.com/#feat=css-filters)).
 
 #### unicorncursor
 Cursor turns into unicorn.
+
+#### upsidedown
+Screen will rotate 180 degree and an upside down cursor is shown (can be overwritten by unicorncursor).
+Most funny on mobile devices, when the user tries to rotate the device to solve the problem.
 
 ### Ideas / not yet implemented
 
@@ -74,9 +78,6 @@ Scrolling up will scroll down the page and vice versa.
 
 #### unicorninvasion
 Unicorns appear all over the screen and a fancy unicorn song is played. 
-
-#### upsidedown
-Screen will rotate 180 degree. Most funny on mobile devices, when the user tries to rotate the device to solve the problem.
 
 ## Demo
 

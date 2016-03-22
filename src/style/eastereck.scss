@@ -1,11 +1,24 @@
-// unicorncursor
-//
-.eastereck-unicorncursor * {
-    cursor: url('../assets/img/unicorn-cursor.gif'), auto;
-}
-
 // drunken
 //
 .eastereck-drunken {
     filter: blur(1px);
+}
+
+// unicorncursor
+//
+.eastereck-unicorncursor {
+    &.eastereck-upsidedown *,
+    * {
+        cursor: url('../assets/img/unicorn-cursor.gif'), auto;
+    }
+}
+
+// upsidedown
+//
+.eastereck-upsidedown {
+    * {
+        cursor: url('../assets/img/upsidedown-cursor.png') 21 25, auto;
+    }
+
+    transform: rotate(180deg);
 }
