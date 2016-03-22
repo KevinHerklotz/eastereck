@@ -63,9 +63,11 @@ module.exports = {
                 }
             },
             {
-                test: /\.(png|jpe?g|gif)$/,
+                test: /\.(png|jpe?g|gif|mp3)$/,
                 include: dir_assets,
-                loader: 'url-loader?limit=8192'
+                // file size limit needs to be big for sound files
+                // and the purpose to provide only a single generated JavaScript file
+                loader: 'url-loader?limit=50000'
             },
             {
                 test: /\.scss$/,
