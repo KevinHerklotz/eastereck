@@ -1,14 +1,13 @@
 # eastereck
 
 You like to amaze or annoy users of your website with funny easter eggs? Then this repository is what you need!
-It provides lots of functionality and a simple API.
-A library that provides funny easter eggs for your page. Notice that it is still in development.
+It provides you a lot of easter eggs and a simple API.
 
 If you have more ideas, tell me!
 
-## Include it into your project
+Notice that it is still in development.
 
-Everything (images, sounds, style, ...) is included in one JavaScript file, so you only need this one file.
+## Include it into your project
 
 ### Via npm
 
@@ -28,6 +27,8 @@ An other way is to include it via script tag in HTML:
 ```
 
 This adds the eastereck object to the global scope, so you can start an easter egg with `eastereck.eastereggname.start()`.
+
+And yes, everything (images, sounds, style, ...) is already included this one JavaScript file.
 
 ```html
 // Example:
