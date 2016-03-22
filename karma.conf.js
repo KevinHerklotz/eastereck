@@ -30,6 +30,10 @@ module.exports = function (config) {
             'test/**/*.js': ['browserify']
         },
 
+        browserify: {
+            debug: true,
+            transform: [ 'babelify' ]
+        },
 
         // test results reporter to use
         // possible values: 'dots', 'progress'
@@ -65,6 +69,12 @@ module.exports = function (config) {
 
         // Concurrency level
         // how many browser should be started simultaneous
-        concurrency: Infinity
+        concurrency: Infinity,
+
+        babelPreprocessor: {
+            options: {
+                presets: ['es2015']
+            }
+        }
     })
 }
