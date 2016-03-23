@@ -34,7 +34,7 @@ export default class AbstractEasterEgg {
      *
      * @public
      * @param  {number}            [duration] Time in milliseconds before stop() function is triggered
-     * @param  {function}          [callback] Function that will be executed after the duration triggered the stop() function
+     * @param  {Function}          [callback] Function that will be executed after the duration triggered the stop() function
      * @return {AbstractEasterEgg}            Self reference
      */
     start(duration, callback) {

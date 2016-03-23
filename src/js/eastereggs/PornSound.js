@@ -12,6 +12,12 @@ export default class PornSound extends AbstractEasterEgg {
     constructor() {
         super();
 
+        /**
+         * HTML Audio Element
+         *
+         * @private
+         * @type {HTMLAudioElement}
+         */
         this.audio = new Audio(soundFile);
     }
 
