@@ -13,12 +13,13 @@ export default class IconParty extends AbstractEasterEgg {
 
         /**
          * Array of nodes that are (probably) icons
-         * info: [...NodeList] converts NodeList to Array
          *
          * @private
          * @type {Array.HTMLElement}
          */
-        this.iconElements = [...document.getElementsByClassName('.fa, .material-icons, .glyphicon, .icon')];
+        this.iconElements = [...document.querySelectorAll(
+            '.fa, .material-icons, .glyphicon, .icon, .octicon, .mega-octicon, .typcn'
+        )]; // [...NodeList] converts NodeList to Array
 
         /**
          * Suffixes that should be alternately added to 'eastereck-iconparty-'

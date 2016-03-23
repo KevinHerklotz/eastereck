@@ -1,6 +1,6 @@
 # eastereck
 
-You like to amaze or annoy users of your website with funny easter eggs? Then this repository is what you need!
+You like to amaze or annoy users of your website with funny [easter eggs](https://en.wikipedia.org/wiki/Easter_egg_%28media%29)? Then this repository is what you need!
 It provides you a lot of easter eggs and a simple API.
 
 If you have more ideas, tell me!
@@ -45,7 +45,8 @@ eastereck.functionname.start(duration, callback);
 eastereck.functionname.stop();
 ```
 
-The function start accepts two parameters. Both are optional:
+The function start() accepts two parameters. Both are optional:
+
 1. duration - time in milliseconds before stop() function is triggered, default is 0 which means that stop() function is never triggered automatically
 2. callback - function that will be executed after the duration triggered the stop() function
 
@@ -67,6 +68,12 @@ Blurred screen like when you are drunken.
 
 Does not work in IE (see [caniuse.com](http://caniuse.com/#feat=css-filters)).
 
+#### iconparty
+If you use icon fonts on your website, they start to dance, rotate or jump.
+
+Effected icons are elements that match the following selector:
+'.fa, .material-icons, .glyphicon, .icon, .octicon, .mega-octicon, .typcn'.
+
 #### pornsound
 An embarrassing porn sound is played.
 
@@ -87,9 +94,6 @@ Alternating neon colors that will make your eyes bleed.
 
 #### flicker
 Screen will flicker like an old television.
-
-#### iconparty
-All icons will rotate randomly.
 
 #### meancaptcha
 Displays a very mean Captcha.
