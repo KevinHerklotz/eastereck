@@ -7,6 +7,7 @@ export default {
     drunken: new ClassSetter('eastereck-drunken'),
     iconparty: new IconParty(),
     pornsound: new PornSound(),
+    shaking: new ClassSetter('eastereck-shaking'),
     unicorncursor: new ClassSetter('eastereck-unicorncursor'),
     upsidedown: new ClassSetter('eastereck-upsidedown')
 };

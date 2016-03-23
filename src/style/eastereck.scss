@@ -1,26 +1,9 @@
+// Easter eggs in ALPHABETICAL ORDER
+
 // drunken
 //
 .eastereck-drunken {
     filter: blur(1px);
-}
-
-// unicorncursor
-//
-.eastereck-unicorncursor {
-    &.eastereck-upsidedown *,
-    * {
-        cursor: url('../assets/img/unicorn-cursor.gif'), auto;
-    }
-}
-
-// upsidedown
-//
-.eastereck-upsidedown {
-    * {
-        cursor: url('../assets/img/upsidedown-cursor.png') 21 25, auto;
-    }
-
-    transform: rotate(180deg);
 }
 
 // iconparty
@@ -79,4 +62,50 @@
     100% {
         transform: rotate(0deg)  translate(0);
     }
+}
+
+// shaking
+//
+.eastereck-shaking {
+    animation: movingaround 800ms linear infinite alternate;
+}
+
+@keyframes movingaround {
+    0% {
+        transform: translate(-2rem, 1rem);
+    }
+    20% {
+        transform: translate(1rem, -2rem);
+    }
+    40% {
+        transform: translate(-2rem, -1rem);
+    }
+    60% {
+        transform: translate(-1rem, 2rem);
+    }
+    80% {
+        transform: translate(0rem, -2rem);
+    }
+    100% {
+        transform: translate(2rem, 0rem);
+    }
+}
+
+// unicorncursor
+//
+.eastereck-unicorncursor {
+    &.eastereck-upsidedown *,
+    * {
+        cursor: url('../assets/img/unicorn-cursor.gif'), auto;
+    }
+}
+
+// upsidedown
+//
+.eastereck-upsidedown {
+    * {
+        cursor: url('../assets/img/upsidedown-cursor.png') 21 25, auto;
+    }
+
+    transform: rotate(180deg);
 }

@@ -1,6 +1,6 @@
 {
   "name": "eastereck",
-  "version": "0.2.0",
+  "version": "0.7.0",
   "description": "funny easter egg library",
   "main": "dist/eastereck.js",
   "scripts": {

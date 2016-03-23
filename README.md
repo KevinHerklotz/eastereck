@@ -77,12 +77,17 @@ Effected icons are elements that match the following selector:
 #### pornsound
 An embarrassing porn sound is played.
 
+#### shaking
+Website is moving around.
+
 #### unicorncursor
 Cursor turns into unicorn.
 
 #### upsidedown
-Screen will rotate 180 degree and an upside down cursor is shown (can be overwritten by unicorncursor).
+Screen will rotate 180 degree and an upside down cursor is shown (can be overwritten by "unicorncursor").
 Most funny on mobile devices, when the user tries to rotate the device to solve the problem.
+
+Doesn't work if "shaking" is active.
 
 ### Ideas / not yet implemented
 
@@ -97,9 +102,6 @@ Screen will flicker like an old television.
 
 #### meancaptcha
 Displays a very mean Captcha.
-
-#### movingscreen
-Screen is moving around.
 
 #### scrollconfusion
 Scrolling up will scroll down the page and vice versa.
