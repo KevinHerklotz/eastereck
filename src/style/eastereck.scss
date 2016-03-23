@@ -29,7 +29,7 @@
     animation: jump 250ms ease infinite alternate;
 }
 .eastereck-iconparty-rotate {
-    animation: rotate 800ms linear infinite;
+    animation: rotate 900ms linear infinite;
 }
 .eastereck-iconparty-dance {
     animation: dance 2000ms linear infinite;
@@ -37,7 +37,7 @@
 
 @keyframes jump {
     0% {
-        transform: translate(0, -8px);
+        transform: translate(0, -.4em);
     }
 }
 @keyframes rotate {
@@ -65,7 +65,7 @@
         transform: rotate(10deg);
     }
     55% {
-        transform: rotate(-10deg) translate(0px);
+        transform: rotate(-10deg) translate(0);
     }
     70% {
         transform: rotate(30deg) translate(.1em, -.2em);
@@ -77,6 +77,6 @@
         transform: rotate(-30deg) translate(-.1em, -.2em);
     }
     100% {
-        transform: rotate(0deg)  translate(0px);
+        transform: rotate(0deg)  translate(0);
     }
 }

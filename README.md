@@ -1,7 +1,7 @@
 # eastereck
 
 You like to amaze or annoy users of your website with funny [easter eggs](https://en.wikipedia.org/wiki/Easter_egg_%28media%29)? Then this repository is what you need!
-It provides you a lot of easter eggs and a simple API.
+It provides a lot of easter eggs and a simple API.
 
 If you have more ideas, tell me!
 
@@ -28,7 +28,7 @@ An other way is to include it via script tag in HTML:
 
 This adds the eastereck object to the global scope, so you can start an easter egg with `eastereck.eastereggname.start()`.
 
-And yes, everything (images, sounds, style, ...) is already included this one JavaScript file.
+And yes, everything (images, sounds, style, ...) is already included in this one JavaScript file.
 
 ```html
 // Example:
@@ -47,8 +47,8 @@ eastereck.functionname.stop();
 
 The function start() accepts two parameters. Both are optional:
 
-1. duration - time in milliseconds before stop() function is triggered, default is 0 which means that stop() function is never triggered automatically
-2. callback - function that will be executed after the duration triggered the stop() function
+1. **duration** - time in milliseconds before stop() function is triggered, default is 0 which means that stop() function is never triggered automatically
+2. **callback** - function that will be executed after the duration triggered the stop() function
 
 ```javascript
 // Example:
