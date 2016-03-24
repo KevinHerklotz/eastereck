@@ -78,6 +78,9 @@ If you use icon fonts on your website, they start to dance, rotate or jump.
 Effected icons are elements that match the following selector:
 '.fa, .material-icons, .glyphicon, .icon, .octicon, .mega-octicon, .typcn'.
 
+#### neonflicker
+Alternating neon colors that will make your eyes bleed.
+
 #### pornsound
 An embarrassing porn sound is played.
 
@@ -97,9 +100,6 @@ Doesn't work if "shaking" is active.
 
 #### brokenglass
 You think you broke your screen glass! Even with the sound of breaking glass.
-
-#### neonflicker
-Alternating neon colors that will make your eyes bleed.
 
 #### flicker
 Screen will flicker like an old television.

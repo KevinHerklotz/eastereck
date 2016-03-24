@@ -6,6 +6,7 @@ require('../style/eastereck.scss');
 export default {
     drunken: new ClassSetter('eastereck-drunken'),
     iconparty: new IconParty(),
+    neonflicker: new ClassSetter('eastereck-neonflicker'),
     pornsound: new PornSound(),
     shaking: new ClassSetter('eastereck-shaking'),
     unicorncursor: new ClassSetter('eastereck-unicorncursor'),

@@ -65,6 +65,39 @@
     }
 }
 
+// neonflicker
+//
+// Because of z-index of -1 it doesn't overlay everything, so buttons are still clickable,
+// but precautionally make all divs transparent so they don't overlay the effect.
+.eastereck-neonflicker {
+    div {
+        background-color: transparent !important;
+    }
+
+    &::after {
+        animation: neonflicker 200ms step-end infinite;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes neonflicker {
+    0% {
+        background-color: #00f;
+    }
+    33% {
+        background-color: #f00;
+    }
+    66% {
+        background-color: #0f0;
+    }
+}
+
 // shaking
 //
 .eastereck-shaking {
