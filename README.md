@@ -64,7 +64,7 @@ eastereck.upsidedown.start(2000, function() {
 (alphabetical order)
 
 #### drunken
-Blurred screen like when you are drunken.
+Blurred screen like when you are drunken. Takes 5 seconds till it gets 100% blurred.
 
 Does not work in IE (see [caniuse.com](http://caniuse.com/#feat=css-filters)).
 
