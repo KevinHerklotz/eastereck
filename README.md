@@ -7,6 +7,10 @@ If you have more ideas, tell me!
 
 Notice that it is still in development.
 
+## Demo
+
+Click [here](https://rawgit.com/KevinHerklotz/eastereck/master/dist/demo.html) to see a demo page.
+
 ## Include it into your project
 
 ### Via npm
@@ -108,7 +112,3 @@ Scrolling up will scroll down the page and vice versa.
 
 #### unicorninvasion
 Unicorns appear all over the screen and a fancy unicorn song is played. 
-
-## Demo
-
-Click [here](https://rawgit.com/KevinHerklotz/eastereck/master/dist/demo.html) to see a demo page.
